@@ -24,7 +24,7 @@ document.getElementById("addColumn").addEventListener("click", () => {
 });
 
 /*
-Question 5:
+Question 5
 Expected: color selected is passed in from HTML to JS for other color functionalities
 */
 let selectedColor = "red"; //default case
@@ -32,3 +32,12 @@ document.getElementById("colorSelect").addEventListener("change", (e) => {
     selectedColor = e.target.value;
 });
 
+/*
+Question 6
+Expected: cells clicked would be modified to the selected color
+*/
+grid.addEventListener("click", (e) => {
+    if (e.target.tagName === "td") {
+        e.target.style.backgroundColor = selectedColor;
+    }
+});

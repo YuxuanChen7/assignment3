@@ -67,3 +67,15 @@ document.getElementById("colorUncolored").addEventListener("click", () => {
         }
     }
 });
+
+/*
+Question 9
+Expected: all cells would be modified to uncolored
+*/
+document.getElementById("removeColor").addEventListener("click", () => {
+    for (let row of grid.rows) {
+        for (let cell of row.cells) {
+            cell.style.backgroundColor = ''; 
+        }
+    }
+});

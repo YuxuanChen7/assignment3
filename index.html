@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
 <body>
     <h1>Grid Manipulation</h1>
+    <!-- grid portion -->
     <button id="addRow">Add Row</button>
     <button id="addColumn">Add Column</button>
     <button id="removeRow">Remove Row</button>
     <button id="removeColumn">Remove Column</button>
+    <!-- grid object: used table element-->
+    <table id="grid"></table>
+    <!-- coloring portion -->
+    <select id="colorSelect">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
     <button id="colorCell">Color Cell</button>
     <button id="colorAll">Color All</button>
     <button id="colorUncoloredBtn">Color Uncolored</button>
-    <script src="index.js"></script>
 </body>
 </html>

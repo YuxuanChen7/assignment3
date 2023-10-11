@@ -53,3 +53,17 @@ document.getElementById("colorAll").addEventListener("click", () => {
         }
     }
 });
+
+/*
+Question 8
+Expected: all uncolored cells would be modified to the selected color
+*/
+document.getElementById("colorUncolored").addEventListener("click", () => {
+    for (let row of grid.rows) {
+        for (let cell of row.cells) {
+            if (!cell.style.backgroundColor) {
+                cell.style.backgroundColor = selectedColor;
+            }
+        }
+    }
+});

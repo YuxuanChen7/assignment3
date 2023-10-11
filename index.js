@@ -41,3 +41,15 @@ grid.addEventListener("click", (e) => {
         e.target.style.backgroundColor = selectedColor;
     }
 });
+
+/*
+Question 7
+Expected: all cells would be modified to the selected color
+*/
+document.getElementById("colorAll").addEventListener("click", () => {
+    for (let row of grid.rows) {
+        for (let cell of row.cells) {
+            cell.style.backgroundColor = selectedColor;
+        }
+    }
+});

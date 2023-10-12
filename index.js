@@ -24,6 +24,18 @@ document.getElementById("addColumn").addEventListener("click", () => {
 });
 
 /*
+Question 3
+Expected: remove a row from the grid
+*/
+const removeRowButton = document.getElementById("removeRow");
+removeRowButton.addEventListener("click", () => {
+    if(grid.rows.length > 0){
+        grid.deleteRow(grid.rows.length - 1);
+    }
+});
+
+
+/*
 Question 5
 Expected: color selected is passed in from HTML to JS for other color functionalities
 */
